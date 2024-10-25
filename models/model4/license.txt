@@ -1,11 +1,11 @@
 Model Information:
-* title:	Torus Knot, math xyz
-* source:	https://sketchfab.com/3d-models/torus-knot-math-xyz-ac9b4616477e4ff8a92ca1e9430733da
-* author:	smice (https://sketchfab.com/smice)
+* title:	Bastion Overwatch 1
+* source:	https://sketchfab.com/3d-models/bastion-overwatch-1-8c67dac9e42f4feb96d7a99e3af5bc41
+* author:	Fail Brain (https://sketchfab.com/fail_brain)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Torus Knot, math xyz" (https://sketchfab.com/3d-models/torus-knot-math-xyz-ac9b4616477e4ff8a92ca1e9430733da) by smice (https://sketchfab.com/smice) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "Bastion Overwatch 1" (https://sketchfab.com/3d-models/bastion-overwatch-1-8c67dac9e42f4feb96d7a99e3af5bc41) by Fail Brain (https://sketchfab.com/fail_brain) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
