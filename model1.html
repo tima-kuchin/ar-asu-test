@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Модель 1</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://ar-js-org.github.io/AR.js/aframe/build/aframe-ar.min.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #backButton { 
+      position: fixed; 
+      bottom: 20px; 
+      left: 50%; 
+      transform: translateX(-50%);
+      padding: 10px 20px; 
+      font-size: 16px; 
+      background-color: #333; 
+      color: #fff; 
+      border: none; 
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- AR-сцена -->
+  <a-scene embedded arjs>
+    <!-- Загрузка модели -->
+    <a-assets>
+      <a-asset-item id="model1" src="models/scene.gltf"></a-asset-item>
+    </a-assets>
+
+    <a-marker preset="hiro">
+      <!-- Модель -->
+      <a-entity gltf-model="#model1" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+
+  <!-- Кнопка возврата -->
+  <button id="backButton" onclick="window.location.href='index.html'">Вернуться на главную</button>
+</body>
+</html>
