@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Модель 1</title>
-  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
   <style>
     body { margin: 0; overflow: hidden; }
     #backButton { 
@@ -19,6 +19,7 @@
       color: #fff; 
       border: none; 
       cursor: pointer;
+      z-index: 10; /* Убедитесь, что кнопка всегда поверх */
     }
   </style>
 </head>
@@ -32,7 +33,7 @@
     <a-marker preset="hiro">
       <a-entity gltf-model="#model1" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
     </a-marker>
-    <a-entity camera></a-entity>
+    <a-entity camera position="0 1.6 0"></a-entity> <!-- Установите позицию камеры -->
   </a-scene>
 
   <!-- Кнопка возврата -->
