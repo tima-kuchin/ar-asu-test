@@ -25,19 +25,17 @@
 <body>
   <!-- AR-сцена -->
   <a-scene embedded arjs>
-    <!-- Загрузка модели -->
     <a-assets>
       <a-asset-item id="model1" src="models/scene.gltf"></a-asset-item>
     </a-assets>
 
     <a-marker preset="hiro">
-      <!-- Модель -->
       <a-entity gltf-model="#model1" position="0 0 0" scale="0.5 0.5 0.5"></a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 
   <!-- Кнопка возврата -->
-  <button id="backButton" onclick="window.location.href='index.html'">Вернуться на главную</button>
+  <a href="index.html" id="backButton">Вернуться на главную</a>
 </body>
 </html>
