@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR-сцена</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #backButton {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a-scene>
+    <!-- Простая сцена с кубом для VR -->
+    <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sky color="#ECECEC"></a-sky>
+    <a-entity position="0 1.6 0" camera wasd-controls look-controls></a-entity>
+  </a-scene>
+  
+  <!-- Кнопка возврата -->
+  <button id="backButton" onclick="window.location.href='index.html'">Вернуться на главную</button>
+</body>
+</html>
